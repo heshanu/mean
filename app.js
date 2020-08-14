@@ -30,6 +30,8 @@ app.use(bodyParser.json());
 //passport 
 app.use(passport.initialize())
 app.use(passport.session())
+
+require('./config/passport')(passport)
 app.use('/users',users)
 //body parser midware 
 app.get("/",(req,res)=>{

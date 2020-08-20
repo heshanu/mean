@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule,Routes} from '@angular/router';
 import {HttpModule} from '@angular/http';
-//import {FormsModule, FormsModule} from '@angular/forms';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,7 +33,7 @@ const appRoutes:Routes=[
     ProfileComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,FormsModule,
     AppRoutingModule,HttpModule,
     RouterModule.forRoot(appRoutes)
   ],

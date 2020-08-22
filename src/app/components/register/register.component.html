@@ -1,31 +1,30 @@
-
 <div>
     <form class="form-horizontal" role="form" (submit)='onRegisterSubmit()'>
         <h2>Registration</h2>
         <div class="form-group">
-            <label  class="col-sm-3 control-label"> Name</label>
+            <label class="col-sm-3 control-label"> Name</label>
             <div class="col-sm-9">
-                <input [(NgModel)]="name" name="name" type="text" class="form-control">
+                <input [ngModel]="name" name="name" class="form-control">
             </div>
         </div>
 
         <div class="form-group">
-            <label  class="col-sm-3 control-label">UserName</label>
+            <label class="col-sm-3 control-label">UserName</label>
             <div class="col-sm-9">
-                <input [(NgModel)]="username" name="username" type="text" class="form-control">
+                <input (ngModel]="username" name="username" class="form-control">
             </div>
         </div>
 
         <div class="form-group">
             <label class="col-sm-3 control-label">Email* </label>
             <div class="col-sm-9">
-                <input [(NgModel)]="email" name="email" type="email"  class="form-control" name="email">
+                <input [ngModel]="email" name="email" type="email" class="form-control" name="email">
             </div>
         </div>
         <div class="form-group">
             <label for="password" class="col-sm-3 control-label">Password*</label>
             <div class="col-sm-9">
-                <input [(NgModel)]="password" name="password" type="password" >
+                <input [ngModel]="password" name="password" type="password">
             </div>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Register</button>

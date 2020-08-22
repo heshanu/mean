@@ -7,16 +7,19 @@ import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
-import { LoginComponent } from './login/login.component';
-import { RegsiterComponent } from './regsiter/regsiter.component';
-import { HomeComponent } from './home/home.component';
-import { ProfileComponent } from './profile/profile.component';
+
+import {HomeComponent} from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { RegisterComponent } from './components/register/register.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
 
 const appRoutes:Routes=[
-  {path:'',component:HomeComponent},
-  {path:'register',component:RegsiterComponent},
+  {path:' ',component:HomeComponent},
+  {path:'home',component:HomeComponent},
+  {path: 'register', component: RegisterComponent },
   {path:'login',component:LoginComponent},
   {path:'navbar',component:NavbarComponent},
   {path:'profile',component:ProfileComponent},
@@ -29,9 +32,10 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    RegsiterComponent,
-    HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    RegisterComponent,
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,FormsModule,

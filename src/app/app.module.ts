@@ -19,7 +19,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 const appRoutes:Routes=[
   {path:' ',component:HomeComponent},
   {path:'home',component:HomeComponent},
-  {path: 'register', component: RegisterComponent },
+  {path:'register', component: RegisterComponent },
   {path:'login',component:LoginComponent},
   {path:'navbar',component:NavbarComponent},
   {path:'profile',component:ProfileComponent},
